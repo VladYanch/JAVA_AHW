@@ -33,8 +33,8 @@ public class Main {
 //        int target = 30; //Target: 30 nearest = 24 : 5, 8, 11
 
 //        int target = -7; //Exactly = -7 : -9, -3, 5
-//        int target = -15; //Target: -15 nearest = -13 : -9, -3, -1
-        int target = -30; //Target: -30 nearest = -13 : -9, -3, -1
+        int target = -15; //Target: -15 nearest = -13 : -9, -3, -1
+//        int target = -30; //Target: -30 nearest = -13 : -9, -3, -1
 
         findSum(arr, target);
     }
