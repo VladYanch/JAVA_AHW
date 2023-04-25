@@ -1,5 +1,5 @@
 import java.awt.*;
-import java.util.Arrays;
+import java.util.Arrays
 
 public class Nodes {
 
@@ -23,8 +23,8 @@ public class Nodes {
         System.out.println(list2.next);
         System.out.println(list2.next.next);
 
-        System.out.println(mergeTwo(list1, list2).toString());
-        System.out.println(list.toString());
+//        System.out.println(mergeTwo(list1, list2).toString());
+//        System.out.println(list.toString());
     }
     public static ListNodes1 mergeTwo(ListNodes1 l1, ListNodes1 l2) {
 //        ListNodes1 list = null;
@@ -44,6 +44,7 @@ public class Nodes {
 //    }
 }
 
+@toString
 class ListNodes1 {
     int val;
     ListNodes1 next;
@@ -52,10 +53,10 @@ class ListNodes1 {
         this.val = val;
     }
 
-    @Override
-    public String toString() {
-        return "ListNodes{" +
-                "val=" + val +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "ListNodes{" +
+//                "val=" + val +
+//                '}';
+//    }
 }
