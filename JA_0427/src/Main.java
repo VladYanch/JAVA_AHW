@@ -11,10 +11,10 @@ public class Main {
         //String[] arr = {"bella", "label", "roller"};
         // System.out.println(commonChars(arr));
         //System.out.println(commonCharsGPT(arr));
-        System.out.println(longestPolinEv("abbbstrrts"));
-        System.out.println(longestPolinEv("abbbstarrts"));
-        System.out.println(longestPolinEv("abbbbbbbstrrts"));
-        System.out.println(longestPolinEv("abbbabbbstrrts"));
+//        System.out.println(longestPolinEv("abbbstrrts"));
+//        System.out.println(longestPolinEv("abbbstarrts"));
+//        System.out.println(longestPolinEv("abbbbbbbstrrts"));
+        System.out.println(longestPolinEv("abbpabsrts"));
     }
 
     /**
