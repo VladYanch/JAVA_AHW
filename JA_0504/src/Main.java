@@ -55,7 +55,7 @@ public class Main {
             int column = list.get(i);
             for (int j = 0; j < 8; j++) {
                 if (j != column) {
-                    System.out.print("0");
+                    System.out.print("-");
                 } else {
                     System.out.print("*");
                 }
