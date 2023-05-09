@@ -30,11 +30,16 @@ public class Main {
             }
             if (!f) {
                 // Если ферзя поставить не удалось
-                // Извлекаем из стека последнего поставленного ферзя
-                j = list.remove(list.size() - 1);
-                removeQueen(i - 1, j, field);
-                i--;
-                j++;
+                // Извлекаем из стека последнего поставленного ферзя и ищем ему другое место
+                if (list.size() > 0) {
+                    j = list.remove(list.size() - 1);
+                    removeQueen(i - 1, j, field);
+                    i--;
+                    j++;
+                } else {
+                    // Если в стеке уже нет ферзей, то значит и нет уже решений - заканчиваем
+                    break;
+                }
             } else {
                 // Очередного ферзя удалось поставить
                 if (list.size() == 8) {
@@ -43,6 +48,7 @@ public class Main {
                     print(count, list);
                     j = list.remove(list.size() - 1);
                     removeQueen(7, j, field);
+                    i = 7;
                     j++;
                 }
             }
@@ -55,9 +61,9 @@ public class Main {
             int column = list.get(i);
             for (int j = 0; j < 8; j++) {
                 if (j != column) {
-                    System.out.print("-");
+                    System.out.print(" - ");
                 } else {
-                    System.out.print("*");
+                    System.out.print(" * ");
                 }
             }
             System.out.println();
