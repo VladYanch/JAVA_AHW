@@ -4,7 +4,7 @@ public class Main {
 //    Массив 1 - 100 112 256 349 770
 //    Массив 2 - 72 86 113 119 265 445 892
 //    к = 7
-//    Вывод : 256
+//    Вывод: 256
 //    Окончательный отсортированный массив -
 //            72, 86, 100, 112, 113, 119, 256, 265, 349, 445, 770, 892
 //            7-й элемент этого массива равен 256.
@@ -35,7 +35,6 @@ public class Main {
             if (arr1[pos1] <= arr2[pos2]) { pos1++; current = 1;}
             else { pos2++; current = 2;}
         }
-//        current == 1 ? res = arr1[pos1-1] : res = arr2[pos2-1];
             if (current == 1) res = arr1[pos1-1];
             else res = arr2[pos2-1];
         return res;
